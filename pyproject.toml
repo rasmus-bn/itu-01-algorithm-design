@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "01-disjoint-sets"
+version = "0.1.0"
+description = ""
+authors = ["Your Name "]
+readme = "README.md"
+packages = [{include = "01_disjoint_sets"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+devtest = "test_main:poetry_run"
